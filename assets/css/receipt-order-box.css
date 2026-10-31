@@ -1,0 +1,95 @@
+.receipt-brand{
+  width:100%;
+  height:28mm;
+  min-height:28mm;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  float:none;
+}
+
+.receipt-brand img{
+  width:29mm;
+  height:26mm;
+  object-fit:contain;
+}
+
+.receipt>h1{
+  height:auto;
+  margin:1.5mm 0 0;
+  padding:0;
+  display:block;
+  font-size:34px!important;
+  font-weight:900;
+  line-height:1;
+  letter-spacing:.25px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.receipt>h1::after{
+  content:"• TEA • JUICE • ICE CREAM •";
+  display:block;
+  margin-top:1.5mm;
+  font-size:11px;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:.3px;
+}
+
+.receipt-info{
+  position:relative;
+  display:block;
+  min-height:15mm;
+  margin:2mm 0 0;
+}
+
+.receipt-info p{
+  margin:0;
+  padding:0 18mm 0 1mm;
+  font-size:0;
+  line-height:1.25;
+  text-align:left;
+}
+
+.receipt-info p::before{
+  content:"MISTY SIP\A BANDARAWELA";
+  display:block;
+  white-space:pre-line;
+  font-size:11px;
+  line-height:1.45;
+}
+
+.receipt-info .order-badge{
+  position:absolute;
+  right:0;
+  top:-1mm;
+  width:16mm;
+  height:14mm;
+  min-height:14mm;
+  box-sizing:border-box;
+  padding:1.5mm 1mm;
+  border:1.2px solid #000;
+  border-radius:1.5mm;
+  display:grid;
+  place-items:center;
+  align-content:center;
+  gap:1mm;
+  background:#fff;
+  color:#000;
+  line-height:1;
+  transform:none;
+}
+
+.order-badge span{
+  font-size:7px;
+  font-weight:700;
+  letter-spacing:.5px;
+}
+
+.order-badge b{
+  color:#000;
+  font-size:16px;
+}
+
+.receipt-info+hr{margin-top:0}

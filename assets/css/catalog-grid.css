@@ -1,0 +1,43 @@
+/* Cashier catalog: five cards per row on desktop. */
+@media (min-width: 1001px) {
+  body.pos-page .product-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
+  }
+}
+
+/* Category tabs stay at the left with a small inset. */
+body.pos-page .catalog-tools .chips {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 4px;
+  overflow: hidden;
+  padding-bottom: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+body.pos-page .catalog-tools .chip {
+  width: 100%;
+  min-width: 0;
+  min-height: 36px;
+  padding: 8px 3px;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+}
+
+body.pos-page .product-card > strong {
+  white-space: nowrap;
+  font-size: 13px;
+  letter-spacing: -.35px;
+}
+
+.size-modal-box.fruit-salad {
+  width: min(780px, 94vw);
+}
+
+.size-modal-box.fruit-salad .customize-column {
+  min-height: 190px;
+}

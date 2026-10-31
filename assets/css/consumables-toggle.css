@@ -1,0 +1,39 @@
+/* Collapsible headers open only from their dedicated triangle buttons. */
+.consumable-panel > summary {
+  cursor: default !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 12px 18px !important;
+}
+
+.consumable-panel > summary::after {
+  content: none !important;
+  display: none !important;
+}
+
+.panel-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  padding: 2px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #075b3b;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+
+.panel-toggle:hover,
+.panel-toggle:focus-visible {
+  background: #edf7f2;
+  outline: none;
+}

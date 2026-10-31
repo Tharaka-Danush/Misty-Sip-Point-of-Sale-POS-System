@@ -1,0 +1,16 @@
+
+/* Users management actions */
+.users-table-panel .user-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.users-table-panel .user-actions form{margin:0}
+.users-table-panel .badge.locked{background:#fee2e2;color:#b42318;border-color:#fecaca}
+.users-table-panel .badge.inactive{background:#f1f5f9;color:#64748b;border-color:#e2e8f0}
+.users-table-panel .badge.pending{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
+.users-table-panel .btn.danger-soft{background:#fff1f2;color:#b42318;border:1px solid #fecdd3}
+
+/* Users: locked cashier status */
+.users-table-panel .badge.locked {
+    background: #dc2626 !important;
+    color: #ffffff !important;
+    border: 1px solid #dc2626 !important;
+    font-weight: 800 !important;
+}

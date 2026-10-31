@@ -1,0 +1,40 @@
+/* Admin user creation and password reset controls. */
+.users-layout{grid-template-columns:minmax(260px,340px) minmax(0,1fr)}.add-user-form input:-webkit-autofill,.add-user-form select:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px #fff inset!important}.password-reset-box{position:relative}.password-reset-box summary{cursor:pointer;color:#075b3b;font-size:12px;font-weight:800;white-space:nowrap}.password-reset-box[open] summary{margin-bottom:8px}.password-reset-box form{display:grid;grid-template-columns:minmax(125px,1fr) minmax(125px,1fr) auto;align-items:center;gap:6px;min-width:390px}.password-reset-box input{padding:7px 8px;font-size:12px}.password-reset-box .btn{white-space:nowrap}.users-table-panel td{vertical-align:top}@media(max-width:1100px){.users-layout{grid-template-columns:1fr}.password-reset-box form{min-width:360px}}
+
+/* Clean Users table + Manage modal */
+.users-table-panel .manage-user-btn{min-width:86px;background:#fff;color:#075f45;border:1px solid #b9d8cd;border-radius:10px;padding:9px 16px;font-weight:800;cursor:pointer}
+.users-table-panel .manage-user-btn:hover{background:#edf8f4;border-color:#82bca8}
+.user-manage-modal[hidden]{display:none!important}
+.user-manage-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px}
+.user-manage-backdrop{position:absolute;inset:0;background:rgba(7,37,29,.55);backdrop-filter:blur(5px)}
+.user-manage-card{position:relative;width:min(470px,100%);background:#fff;border-radius:22px;box-shadow:0 24px 70px rgba(0,0,0,.24);padding:26px;z-index:1}
+.user-manage-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:20px}
+.user-manage-head small{display:block;color:#718078;font-weight:800;letter-spacing:.08em;font-size:11px;margin-bottom:5px}
+.user-manage-head h2{margin:0;color:#102d24;font-size:25px}
+.user-manage-x{width:36px;height:36px;border:1px solid #d9e5e0;background:#fff;border-radius:10px;font-size:22px;line-height:1;cursor:pointer}
+.user-manage-info{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.user-manage-info div{border:1px solid #e0e9e5;background:#f8fbfa;border-radius:12px;padding:12px}
+.user-manage-info small{display:block;color:#718078;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.user-manage-info strong{color:#17362c;font-size:14px;word-break:break-word}
+.user-manage-actions{display:flex;gap:10px;flex-wrap:wrap;padding-top:18px;border-top:1px solid #e5ece9}
+.user-manage-actions form{margin:0;flex:1}
+.user-manage-actions .btn{width:100%;min-height:42px}
+.user-manage-actions .danger-soft{background:#fff1f2;color:#b42318;border:1px solid #fecdd3}
+.user-manage-note{margin:0;color:#718078;font-size:13px;line-height:1.5}
+@media(max-width:600px){.user-manage-info{grid-template-columns:1fr}.user-manage-actions{flex-direction:column}}
+
+/* Locked cashier status - red */
+.users-table-panel .badge.locked {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+  border: 1px solid #dc2626 !important;
+  font-weight: 800 !important;
+}
+
+/* Inactive user status - orange */
+.users-table-panel .badge.inactive {
+  background: #f59e0b !important;
+  color: #ffffff !important;
+  border: 1px solid #f59e0b !important;
+  font-weight: 800 !important;
+}
